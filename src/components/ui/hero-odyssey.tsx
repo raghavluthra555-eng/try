@@ -236,6 +236,89 @@ const FeatureItem: React.FC<FeatureItemProps> = ({ name, value, position, icon: 
   );
 };
 
+const WelcomeSequence: React.FC = () => {
+  const sequenceVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 0.2
+      }
+    }
+  };
+
+  const lineVariants = {
+    hidden: { opacity: 0, y: 10 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut"
+      }
+    }
+  };
+
+  const highlightVariants = {
+    hidden: { opacity: 0, width: 0 },
+    visible: {
+      opacity: 1,
+      width: "100%",
+      transition: {
+        duration: 1,
+        ease: "easeInOut",
+        delay: 0.4
+      }
+    }
+  };
+
+  return (
+    <motion.div
+      variants={sequenceVariants}
+      initial="hidden"
+      animate="visible"
+      className="space-y-4 sm:space-y-6"
+    >
+      <motion.div variants={lineVariants} className="relative">
+        <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
+          For over two decades, <span className="text-[#00B3AE] font-semibold">Kashe Energy</span> has been the trusted partner of African industries
+        </p>
+      </motion.div>
+
+      <motion.div variants={lineVariants} className="relative">
+        <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
+          Specializing in <span className="text-[#FFC857] font-semibold">premium lubricants</span>, <span className="text-[#FF8A3D] font-semibold">automotive care</span>, and <span className="text-[#00B3AE] font-semibold">clean energy solutions</span>
+        </p>
+      </motion.div>
+
+      <motion.div variants={lineVariants} className="relative pt-4">
+        <div className="flex flex-wrap gap-2 items-center justify-center sm:justify-start">
+          <span className="text-gray-400 text-sm sm:text-base">We deliver</span>
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 1.5 }}
+            className="inline-block px-3 py-1 bg-[#00B3AE]/20 border border-[#00B3AE]/50 rounded-full text-[#00B3AE] font-semibold text-sm"
+          >
+            excellence
+          </motion.span>
+          <span className="text-gray-400 text-sm sm:text-base">through innovation and sustainability</span>
+        </div>
+      </motion.div>
+
+      <motion.div
+        variants={lineVariants}
+        className="pt-6 border-t border-white/10"
+      >
+        <p className="text-gray-500 text-xs sm:text-sm italic">
+          Engineered for performance. Trusted across Africa and beyond.
+        </p>
+      </motion.div>
+    </motion.div>
+  );
+};
+
 export const HeroOdyssey: React.FC = () => {
   const lightningHue = 180;
 
@@ -244,8 +327,8 @@ export const HeroOdyssey: React.FC = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.3
+        staggerChildren: 0.15,
+        delayChildren: 0.4
       }
     }
   };
@@ -325,7 +408,7 @@ export const HeroOdyssey: React.FC = () => {
           <div className="relative z-30 max-w-4xl mx-auto">
             <motion.div
               variants={itemVariants}
-              className="inline-block mb-6"
+              className="inline-block mb-8"
             >
               <span className="text-[#00B3AE] text-xs sm:text-sm font-semibold tracking-wider uppercase px-4 py-2 bg-[#00B3AE]/10 rounded-full border border-[#00B3AE]/30 backdrop-blur-sm">
                 Global Energy & Lubricant Brand
@@ -334,24 +417,24 @@ export const HeroOdyssey: React.FC = () => {
 
             <motion.h1
               variants={itemVariants}
-              className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 leading-tight"
+              className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight"
             >
               Kashe Energy
             </motion.h1>
 
             <motion.h2
               variants={itemVariants}
-              className="text-2xl sm:text-3xl md:text-5xl font-light mb-6 bg-gradient-to-r from-[#00B3AE] via-[#FFC857] to-[#FF8A3D] bg-clip-text text-transparent"
+              className="text-2xl sm:text-3xl md:text-5xl font-light mb-10 bg-gradient-to-r from-[#00B3AE] via-[#FFC857] to-[#FF8A3D] bg-clip-text text-transparent"
             >
               Powering Progress Across Africa
             </motion.h2>
 
-            <motion.p
+            <motion.div
               variants={itemVariants}
-              className="text-gray-300 text-sm sm:text-base mb-8 max-w-2xl mx-auto px-4"
+              className="mb-10 max-w-2xl mx-auto px-4"
             >
-              Premium lubricants, car care products, and sustainable solar solutions engineered for maximum performance and efficiency.
-            </motion.p>
+              <WelcomeSequence />
+            </motion.div>
 
             <motion.div
               variants={itemVariants}
@@ -385,8 +468,6 @@ export const HeroOdyssey: React.FC = () => {
       >
         <div className="absolute inset-0 bg-gradient-to-b from-[#041524] via-[#062336] to-[#041524]"></div>
 
-        <div className="absolute top-[50%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] sm:w-[800px] h-[600px] sm:h-[800px] rounded-full bg-gradient-to-b from-[#00B3AE]/20 to-[#00767A]/10 blur-3xl"></div>
-
         <div className="absolute top-0 w-full left-1/2 transform -translate-x-1/2 h-full opacity-80">
           <Lightning
             hue={lightningHue}
@@ -396,8 +477,6 @@ export const HeroOdyssey: React.FC = () => {
             size={2.2}
           />
         </div>
-
-        <div className="absolute top-[50%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] sm:w-[600px] h-[400px] sm:h-[600px] backdrop-blur-3xl rounded-full bg-[radial-gradient(circle_at_30%_80%,_rgba(0,179,174,0.15)_0%,_rgba(4,21,36,0.8)_50%,_rgba(4,21,36,0.95)_100%)] border border-[#00B3AE]/10"></div>
       </motion.div>
     </div>
   );
