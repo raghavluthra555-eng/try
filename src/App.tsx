@@ -1,5 +1,5 @@
 import Header from './components/Header';
-import Hero from './components/Hero';
+import { HeroOdyssey } from './components/ui/hero-odyssey';
 import PillarCards from './components/PillarCards';
 import ProductsSection from './components/ProductsSection';
 import VideoShowcase from './components/VideoShowcase';
@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="min-h-screen bg-[#041524]">
       <Header />
-      <Hero />
+      <HeroOdyssey />
       <PillarCards />
       <ProductsSection />
       <VideoShowcase />
