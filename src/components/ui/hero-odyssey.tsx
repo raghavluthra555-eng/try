@@ -221,15 +221,15 @@ const FeatureItem: React.FC<FeatureItemProps> = ({ name, value, position, icon: 
     >
       <div className="flex items-center gap-3 relative">
         <div className="relative">
-          <div className="w-12 h-12 bg-gradient-to-br from-[#00B3AE] to-[#00767A] rounded-xl flex items-center justify-center shadow-lg shadow-[#00B3AE]/50">
+          <div className="w-12 h-12 bg-gradient-to-br from-[#FFD700] to-[#FFA500] rounded-xl flex items-center justify-center shadow-lg shadow-[#FFD700]/50">
             <Icon className="w-6 h-6 text-white" />
           </div>
-          <div className="absolute -inset-1 bg-[#00B3AE]/30 rounded-xl blur-sm opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div className="absolute -inset-1 bg-[#FFD700]/30 rounded-xl blur-sm opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
         <div className="text-white relative backdrop-blur-sm bg-[#041524]/50 px-4 py-2 rounded-lg border border-white/10">
-          <div className="font-semibold text-sm group-hover:text-[#00B3AE] transition-colors duration-300">{name}</div>
+          <div className="font-semibold text-sm group-hover:text-[#FFD700] transition-colors duration-300">{name}</div>
           <div className="text-gray-300 text-xs group-hover:text-white transition-colors duration-300">{value}</div>
-          <div className="absolute -inset-2 bg-[#00B3AE]/10 rounded-lg blur-md opacity-70 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
+          <div className="absolute -inset-2 bg-[#FFD700]/10 rounded-lg blur-md opacity-70 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
         </div>
       </div>
     </motion.div>
@@ -282,13 +282,13 @@ const WelcomeSequence: React.FC = () => {
     >
       <motion.div variants={lineVariants} className="relative">
         <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-          For over two decades, <span className="text-[#00B3AE] font-semibold">Kashe Energy</span> has been the trusted partner of African industries
+          For over two decades, <span className="text-[#FFD700] font-semibold">Kashe Energy</span> has been the trusted partner of African industries
         </p>
       </motion.div>
 
       <motion.div variants={lineVariants} className="relative">
         <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-          Specializing in <span className="text-[#FFC857] font-semibold">premium lubricants</span>, <span className="text-[#FF8A3D] font-semibold">automotive care</span>, and <span className="text-[#00B3AE] font-semibold">clean energy solutions</span>
+          Specializing in <span className="text-[#FFD700] font-semibold">premium lubricants</span>, <span className="text-[#FFA500] font-semibold">automotive care</span>, and <span className="text-[#FFD700] font-semibold">clean energy solutions</span>
         </p>
       </motion.div>
 
@@ -299,7 +299,7 @@ const WelcomeSequence: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.5 }}
-            className="inline-block px-3 py-1 bg-[#00B3AE]/20 border border-[#00B3AE]/50 rounded-full text-[#00B3AE] font-semibold text-sm"
+            className="inline-block px-3 py-1 bg-[#FFD700]/20 border border-[#FFD700]/50 rounded-full text-[#FFD700] font-semibold text-sm"
           >
             excellence
           </motion.span>
@@ -320,7 +320,7 @@ const WelcomeSequence: React.FC = () => {
 };
 
 export const HeroOdyssey: React.FC = () => {
-  const lightningHue = 180;
+  const lightningHue = 45;
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -410,7 +410,7 @@ export const HeroOdyssey: React.FC = () => {
               variants={itemVariants}
               className="inline-block mb-8"
             >
-              <span className="text-[#00B3AE] text-xs sm:text-sm font-semibold tracking-wider uppercase px-4 py-2 bg-[#00B3AE]/10 rounded-full border border-[#00B3AE]/30 backdrop-blur-sm">
+              <span className="text-[#FFD700] text-xs sm:text-sm font-semibold tracking-wider uppercase px-4 py-2 bg-[#FFD700]/10 rounded-full border border-[#FFD700]/30 backdrop-blur-sm">
                 Global Energy & Lubricant Brand
               </span>
             </motion.div>
@@ -424,7 +424,7 @@ export const HeroOdyssey: React.FC = () => {
 
             <motion.h2
               variants={itemVariants}
-              className="text-2xl sm:text-3xl md:text-5xl font-light mb-10 bg-gradient-to-r from-[#00B3AE] via-[#FFC857] to-[#FF8A3D] bg-clip-text text-transparent"
+              className="text-2xl sm:text-3xl md:text-5xl font-light mb-10 bg-gradient-to-r from-[#FFD700] via-[#FFA500] to-[#FF8C00] bg-clip-text text-transparent"
             >
               Powering Progress Across Africa
             </motion.h2>
@@ -443,7 +443,7 @@ export const HeroOdyssey: React.FC = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="group px-8 py-4 bg-gradient-to-r from-[#00B3AE] to-[#00767A] text-white rounded-full font-semibold hover:shadow-2xl hover:shadow-[#00B3AE]/50 transition-all flex items-center justify-center gap-2 w-full sm:w-auto"
+                className="group px-8 py-4 bg-gradient-to-r from-[#FFD700] to-[#FFA500] text-white rounded-full font-semibold hover:shadow-2xl hover:shadow-[#FFD700]/50 transition-all flex items-center justify-center gap-2 w-full sm:w-auto"
               >
                 View Products
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -451,7 +451,7 @@ export const HeroOdyssey: React.FC = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 border-2 border-[#00B3AE] text-[#00B3AE] rounded-full font-semibold hover:bg-[#00B3AE] hover:text-white transition-all w-full sm:w-auto"
+                className="px-8 py-4 border-2 border-[#FFD700] text-[#FFD700] rounded-full font-semibold hover:bg-[#FFD700] hover:text-white transition-all w-full sm:w-auto"
               >
                 Explore Solar Solutions
               </motion.button>
@@ -466,9 +466,11 @@ export const HeroOdyssey: React.FC = () => {
         transition={{ duration: 1.5 }}
         className="absolute inset-0 z-0"
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-[#041524] via-[#062336] to-[#041524]"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#041524] via-[#1a1410] to-[#041524]"></div>
 
-        <div className="absolute top-0 w-full left-1/2 transform -translate-x-1/2 h-full opacity-80">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-gradient-to-b from-[#FFD700]/15 to-[#FFA500]/5 blur-3xl pointer-events-none"></div>
+
+        <div className="absolute top-0 w-full left-1/2 transform -translate-x-1/2 h-full opacity-75">
           <Lightning
             hue={lightningHue}
             xOffset={0}
