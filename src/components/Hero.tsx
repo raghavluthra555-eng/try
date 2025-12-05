@@ -46,8 +46,8 @@ export default function Hero() {
             <div className="relative z-10">
               <div className="relative h-[500px] rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
                 <img
-                  src="https://images.pexels.com/photos/3962286/pexels-photo-3962286.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                  alt="Engine and mechanical systems"
+                  src="https://images.pexels.com/photos/8566941/pexels-photo-8566941.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  alt="Solar panels and renewable energy"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#041524] via-transparent to-transparent"></div>

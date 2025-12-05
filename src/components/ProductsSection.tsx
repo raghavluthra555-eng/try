@@ -56,11 +56,11 @@ export default function ProductsSection() {
           {products.map((product, index) => {
             const images = [
               'https://images.pexels.com/photos/159591/car-maintenance-car-care-tools-159591.jpeg?auto=compress&cs=tinysrgb&w=600',
-              'https://images.pexels.com/photos/3962286/pexels-photo-3962286.jpeg?auto=compress&cs=tinysrgb&w=600',
-              'https://images.pexels.com/photos/3945643/pexels-photo-3945643.jpeg?auto=compress&cs=tinysrgb&w=600',
-              'https://images.pexels.com/photos/13691375/pexels-photo-13691375.jpeg?auto=compress&cs=tinysrgb&w=600',
-              'https://images.pexels.com/photos/17842610/pexels-photo-17842610.jpeg?auto=compress&cs=tinysrgb&w=600',
-              'https://images.pexels.com/photos/3962572/pexels-photo-3962572.jpeg?auto=compress&cs=tinysrgb&w=600'
+              'https://images.pexels.com/photos/8566458/pexels-photo-8566458.jpeg?auto=compress&cs=tinysrgb&w=600',
+              'https://images.pexels.com/photos/3944390/pexels-photo-3944390.jpeg?auto=compress&cs=tinysrgb&w=600',
+              'https://images.pexels.com/photos/8566941/pexels-photo-8566941.jpeg?auto=compress&cs=tinysrgb&w=600',
+              'https://images.pexels.com/photos/8566462/pexels-photo-8566462.jpeg?auto=compress&cs=tinysrgb&w=600',
+              'https://images.pexels.com/photos/17842610/pexels-photo-17842610.jpeg?auto=compress&cs=tinysrgb&w=600'
             ];
 
             return (

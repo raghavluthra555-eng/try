@@ -20,8 +20,8 @@ export default function VideoShowcase() {
           <div className="relative group rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
             <div className="relative h-80 bg-gradient-to-br from-[#00B3AE]/20 to-[#FF8A3D]/20">
               <img
-                src="https://images.pexels.com/photos/3944387/pexels-photo-3944387.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                alt="Industrial operations"
+                src="https://images.pexels.com/photos/8566458/pexels-photo-8566458.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Industrial lubricant operations"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#041524] via-transparent to-transparent"></div>
@@ -45,8 +45,8 @@ export default function VideoShowcase() {
           <div className="relative group rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
             <div className="relative h-80 bg-gradient-to-br from-[#FFC857]/20 to-[#FF8A3D]/20">
               <img
-                src="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                alt="Solar energy installation"
+                src="https://images.pexels.com/photos/8566462/pexels-photo-8566462.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Solar farm energy generation"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#041524] via-transparent to-transparent"></div>
